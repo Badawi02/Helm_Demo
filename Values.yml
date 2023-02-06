@@ -1,0 +1,28 @@
+name_deploy: "bakehouse"
+
+labels:
+  - bakehouse
+
+replicaCount: 1
+
+image_deploy: "ahmedbadawi/jenkinsproject:6"
+
+name_container: "backhoouse-container"
+
+imagePullPolicy: "Always"
+
+containerPort: 80
+
+nameSvc: "myservices"
+
+portName: "bakehouseport"
+
+port: 80
+
+protocol: "TCP"
+
+targetPort: 80
+
+nodePort: 30030
+
+type_svc: "NodePort"
